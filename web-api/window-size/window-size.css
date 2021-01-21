@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.window-container {
+  display: inline-block;
+  background-color: #bba8d1;
+  padding: 16px;
+  font-size: 30px;
+}

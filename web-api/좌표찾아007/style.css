@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.line {
+  position: absolute;
+  background-color: #fff;
+}
+
+.horizontal {
+  width: 100%;
+  height: 1px;
+}
+
+.vertical {
+  width: 1px;
+  height: 100%;
+}
+
+.target {
+  position: absolute;
+}
+
+.result {
+  position: absolute;
+  color: #fff;
+}
