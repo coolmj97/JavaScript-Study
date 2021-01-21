@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 250px;
+        height: 250px;
+        background-color: yellow;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="checkbox" />
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+      //스크롤 성능향상을 위해서 { passive : true } 옵션을 추가하면 preventDefault로 막았다하더라도 스크롤이 된다.
+      //wheel 이벤트는 기본적으로 passive가 true로 설정된다.
+      document.addEventListener('wheel', (event) => {
+        console.log('scrolling');
+        event.preventDefault();
+      });
+
+      const checkbox = document.querySelector('input');
+      checkbox.addEventListener('click', (event) => {
+        // long
+        console.log('checked');
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>
