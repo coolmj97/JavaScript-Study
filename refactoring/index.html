@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>당근을 뽑아라!</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="src/app.js" defer></script>
+  </head>
+  <body>
+    <section class="main-game">
+      <header class="game-info">
+        <button type="button" class="toggle-play">
+          <i class="fas fa-play button-play"></i>
+        </button>
+        <strong class="timer">0:00</strong>
+        <strong class="score">0</strong>
+      </header>
+
+      <section class="field"></section>
+    </section>
+
+    <section class="pop-up pop-up-hide">
+      <span class="pop-up-message"></span>
+      <button type="reset" class="button-reset">
+        <i class="fas fa-redo redo"></i>
+      </button>
+    </section>
+  </body>
+</html>

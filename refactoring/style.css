@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 8px;
+  background-image: url(./img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 40px;
+  text-align: center;
+}
+
+button {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.main-game {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-play,
+.toggle-stop {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 8px;
+  border: 4px solid #000;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.timer {
+  padding: 8px 24px;
+  margin-bottom: 8px;
+  border: 4px solid #000;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
+}
+
+.score {
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  margin-bottom: 40px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: #fb8c00;
+  color: #fafafa;
+  text-align: center;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
+}
+
+.field {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
+}
+
+.pop-up {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 200px;
+  padding: 24px;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0, 0.7);
+  border-radius: 20px;
+  color: #fafafa;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.pop-up-hide {
+  display: none;
+}
+
+.button-reset {
+  width: 70px;
+  height: 70px;
+  margin: 24px auto;
+  border-radius: 50%;
+}
