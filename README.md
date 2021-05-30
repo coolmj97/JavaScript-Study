@@ -1,5 +1,5 @@
 # JavaScript-Study
-Dream Coding 브라우저 101     
+Dream Coding 브라우저 101 강의 실습      
 소스코드 제공: https://academy.dream-coding.com/     
 
 ## refactoring     
